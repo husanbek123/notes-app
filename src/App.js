@@ -34,13 +34,11 @@ export default class App extends Component {
     render() {
         return (
             <>
-                <BrowserRouter basename='/notes'>
-                    <Routes>
-                        <Route exact path='/notes' element={<Home user={this.state.userInfo} />} />
-                        <Route path='/register' element={<Registration />} />
-                        <Route path='/home' element={<Home user={this.state.userInfo} />} />
-                    </Routes>
-                </BrowserRouter>
+                <Routes>
+                    <Route path='/notes' element={<Home user={this.state.userInfo} />} />
+                    <Route path='/register' element={<Registration />} />
+                    <Route path='/home' element={<Home user={this.state.userInfo} />} />
+                </Routes>
             </>
         )
     }
