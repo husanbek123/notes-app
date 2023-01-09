@@ -34,9 +34,9 @@ export default class App extends Component {
     render() {
         return (
             <>
-                <BrowserRouter basename='/notes-app'>
+                <BrowserRouter basename='/notes'>
                     <Routes>
-                        <Route exact path='/notes-app' element={<Home user={this.state.userInfo} />} />
+                        <Route exact path='/notes' element={<Home user={this.state.userInfo} />} />
                         <Route path='/register' element={<Registration />} />
                         <Route path='/home' element={<Home user={this.state.userInfo} />} />
                     </Routes>
