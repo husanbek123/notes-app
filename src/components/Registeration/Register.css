@@ -1,0 +1,81 @@
+
+
+#register-Modal {
+    background: linear-gradient(
+        to left,
+        rgba(7, 27, 82, 1) 0%,
+        rgba(0, 128, 128, 1) 100%
+    );
+}
+
+#reg-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    row-gap: 14px;
+}
+
+#reg-form input {
+    /* padding: 4px 4px 4px 4px; */
+    padding: 10px;
+    font-size: 22px;
+    outline: none;
+    border-radius: 6px;
+    background-color: transparent !important;
+    backdrop-filter: blur(100000%);
+    border: 2px solid rgba(255, 255, 255, 0.672);
+    color: white;
+}
+
+#reg-form button {
+    color: rgb(0, 223, 223);
+    border: 0;
+    border-radius: 6px;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 22px;
+    position: relative;
+    background-color: rgb(0, 30, 112);
+    overflow: hidden;
+    z-index: 0;
+    transition: 0.5s
+}
+
+#reg-form button::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgb(0, 203, 203);
+    transition: 0.4s;
+    z-index: -1;
+
+}
+
+#reg-form button::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgb(0, 203, 203);
+    transition: 0.4s;
+    z-index: -1;
+}
+
+#reg-form button:hover::before {
+    width: 50%;
+}
+
+#reg-form button:hover::after {
+    width: 50%;
+}
+
+#reg-form button:hover {
+    color: rgb(0, 30, 112);
+}

@@ -1,0 +1,124 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  justify-content: center;
+  row-gap: 10px;
+}
+
+
+#failSpan {
+  color: red;
+  opacity: 0;
+}
+
+nav {
+  padding: 16px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  width: 10%;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+
+#Notes-Field {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 12px 10%;
+  justify-content: space-between;
+  row-gap: 18px;
+
+}
+
+#Notes-Field .note {
+  border: 1px solid gray;
+  width: 49%;
+  padding: 0 10px 10px;
+  row-gap: 10px;
+  border-radius: 6px;
+}
+
+
+#Notes {
+  padding: 12px 10%;
+}
+
+#Notes #inputs {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  row-gap: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#Notes #inputs input, textarea {
+  padding: 6px 8px;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 4px;
+  transition: 0.5s;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+#Notes #inputs textarea {
+
+  height: 160px;
+  
+} 
+
+.active {
+  width: 73%;
+  background-color: red;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.btns button {
+  width: 49%;
+  padding: 6px;
+  cursor: pointer;
+  border: 1px solid  black;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+#Add_Btn {
+  background-color: rgb(104, 104, 255);
+}
+#Del_Btn {
+  background-color: red;
+}
+
+#not-found {
+  font-size: 62px;
+  color: red;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
