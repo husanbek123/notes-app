@@ -20,6 +20,14 @@
   opacity: 0;
 }
 
+body {
+  background: linear-gradient(
+    to left,
+    rgba(7, 27, 82, 0.9) 0%,
+    rgba(0, 128, 128, 0.9) 100%
+  );
+}
+
 nav {
   padding: 16px 30px;
   display: flex;
@@ -29,6 +37,7 @@ nav {
 
 nav h1 {
   width: 10%;
+  color: white;
 }
 
 nav ul {
@@ -36,8 +45,13 @@ nav ul {
   list-style: none;
   justify-content: center;
   column-gap: 20px;
+  
 }
 
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
 
 #Notes-Field {
   display: flex;
@@ -45,7 +59,6 @@ nav ul {
   padding: 12px 10%;
   justify-content: space-between;
   row-gap: 18px;
-
 }
 
 #Notes-Field .note {

@@ -9,12 +9,16 @@
 #navbar_right-part button {
     padding: 2px 8px;
     cursor: pointer;
+
 }
 
 
-#Menu-Icon i {
+#Menu-Icon {
     cursor: pointer;
     font-size: 28px !important;
+    color: white !important;
+    background-color: white;
+
 }
 
 #Menu {

@@ -35,7 +35,7 @@ export default class App extends Component {
         return (
             <>
                 <Routes>
-                    <Route path='/notes' element={<Home user={this.state.userInfo} />} />
+                    <Route path='/' element={<Home user={this.state.userInfo} />} />
                     <Route path='/register' element={<Registration />} />
                     <Route path='/home' element={<Home user={this.state.userInfo} />} />
                 </Routes>
